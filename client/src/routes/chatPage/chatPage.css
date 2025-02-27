@@ -1,0 +1,84 @@
+.chatPage{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+
+  .wrapper {
+    flex: 1;
+    overflow: scroll; /* Enables scrolling */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+
+/* Custom Scrollbar Styles */
+.wrapper::-webkit-scrollbar {
+    width: 8px; /* Adjust the width of the scrollbar */
+    height: 8px; /* Adjust the height for horizontal scrollbar */
+}
+
+.wrapper::-webkit-scrollbar-thumb {
+    background: #888; /* Color of the scrollbar thumb */
+    border-radius: 10px; /* Rounded corners */
+    border: 2px solid transparent; /* Optional: space around thumb */
+}
+
+.wrapper::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Color when hovered */
+}
+
+.wrapper::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Background of the scrollbar track */
+    border-radius: 10px; /* Rounded corners for track */
+}
+
+
+    .chat{
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+
+      p,li{
+        margin: 10px 0px;
+      }
+
+      .message{
+        padding: 20px;
+
+        &.user{
+          background-color: #2c2937;
+          border-radius: 20px;
+          max-width: 80%;
+          align-self: flex-end;
+        }
+      }
+    }
+  }
+}
+.wrapper::-webkit-scrollbar {
+  width: 4px; /* Width of vertical scrollbar */
+  height: 8px; /* Height of horizontal scrollbar */
+}
+
+.wrapper::-webkit-scrollbar-thumb {
+  background-color: #0e0c16; /* Dark background for the scrollbar thumb */
+  border-radius: 10px; /* Rounded corners for the thumb */
+}
+
+.wrapper::-webkit-scrollbar-thumb:hover {
+  background-color: #0e0c16; /* Slightly lighter color on hover */
+}
+
+.wrapper::-webkit-scrollbar-track {
+  background-color: #0e0c16; /* Track background color */
+  border-radius: 10px; /* Rounded corners for the track */
+}
+
+/* For Firefox */
+.wrapper {
+  scrollbar-width: thin; /* Thin scrollbar */
+  scrollbar-color: #0e0c16 #0e0c16; /* Thumb and track colors */
+}

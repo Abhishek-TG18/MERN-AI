@@ -1,0 +1,26 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon --env-file .env index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@clerk/clerk-sdk-node": "^5.0.16",
+    "axios": "^1.7.9",
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "form-data": "^4.0.1",
+    "imagekit": "^5.0.1",
+    "mongoose": "^8.5.1",
+    "nodemon": "^3.1.7",
+    "path": "^0.12.7",
+    "url": "^0.11.3"
+  }
+}
